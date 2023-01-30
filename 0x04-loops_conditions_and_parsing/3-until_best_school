@@ -3,5 +3,5 @@
 i="10"
 until [ $i -le 0 ]; do
 	echo "Best School"
-	let i-=1
+	let expr i-=1
 done
