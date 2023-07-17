@@ -1,3 +1,4 @@
+#ufw configuration
 sudo apt-get install ufw
 sudo ufw disable
 sudo ufw enable
