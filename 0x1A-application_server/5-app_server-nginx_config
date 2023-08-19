@@ -1,6 +1,6 @@
 # Configures Nginx to serve the complete AirBnB_clone_v4 application.
 
-server {
+server /{
     # Listen on port 80.
     listen      80 default_server;
     listen      [::]:80 default_server ipv6only=on;
@@ -12,7 +12,7 @@ server {
     add_header  X-Served-By 122276-web-01;
 
     # Serve /airbnb-onepage/ route on AirBnB_clone_v2
-    location = /airbnb-onepage/ {
+    location=/airbnb-onepage/ {
         proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
     }
 
